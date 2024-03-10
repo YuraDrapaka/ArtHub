@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway","Helvetica","Arial",sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 80px;
+    background-color: #202020;
+    color: white;
+    padding: 0px 30px;
+    /* border-bottom: 4px solid black; */
+}
+
+.header::after{
+    border-bottom: 4px solid black;
+}
+
+.logo-link{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-list{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-item{
+    /* margin: 0px 10px; */
+    padding: 0px 10px;
+}
+
+.support-container{
+    display: flex;
+    align-items: center;
+}
+
+.heart-icon{
+    height: 16px;
+}
+
+.section1{
+    background-color: #3b3b3b;
+    height: 100vh;
+    padding: 40px;
+    color: white;
+}

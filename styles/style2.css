@@ -1,0 +1,302 @@
+/* DARK THEME */
+:root {
+    --main-color: #FFF;
+    --second-color: #1E2939;
+    --main-text-color: #000;
+    --second-text-color: #595959;
+    --third-text-color: #A8A8A8;
+    --opposite-text-color: #FB6D3A;
+    --opacity: 0.5;
+
+    --bg-color-one: #fff;
+    --bg-color-two: #959595;
+}
+
+/* DARK THEME */
+/* :root {
+    --main-color: #1f1f1f;
+    --second-color: #74a4ed;
+    --main-text-color: #ffffff;
+    --second-text-color: #adadad;
+    --third-text-color: #656565;
+    --opposite-text-color: #FB6D3A;
+    --opacity: 1;
+
+    --bg-color-one: #1f1f1f;
+    --bg-color-two: #191a39;
+} */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    margin: 0px;
+    padding: 0px;
+    background: rgb(24,24,24);
+    background: radial-gradient(circle, var(--bg-color-one) 20%, var(--bg-color-two) 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Main */
+.main {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+  }
+  
+.main-content {
+    flex: 1; /* Розширення вмісту на залишок доступного простору */
+    padding: 105px 90px;
+    background: var(--main-color);
+    box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.10);
+  }
+
+.about-position{
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* about */
+.about-name{
+    color: var(--main-text-color);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.about-description{
+    color: var(--second-text-color);
+    width: 400px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+
+/* Projects */
+
+.title {
+    color: var(--main-text-color);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.project-item{
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.project-list{
+    padding: 0px;
+    margin-left: 17px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+.project, .project-link{
+    color: var(--second-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.projects-bracket{
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* Recent Works */
+
+.img-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.photo-li{
+    /* width: 370px; */
+    height: 160px;
+    margin-top: 3px;
+}
+
+/* Work */
+.work-position{
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.organization{
+    color: var(--opposite-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.period{
+    color: var(--third-text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.line{
+    color: var(--main-text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.work-list{
+    width: 510px;
+    padding: 0px;
+    margin-left: 17px;
+}
+
+.work-list-item{
+    color: var(--second-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.study-position{
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.university{
+    color: var(--opposite-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+
+/* Sidebar */
+.sidebar{
+    color: var(--main-color);
+    background: var(--second-color);
+    width: 370px;
+}
+
+.photo{
+    width: 370px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+
+.sidebar-title{
+    color: var(--main-color);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+ .contacts, 
+.tech-skills, 
+.soft-skills{
+    margin-left: 40px;
+}
+
+.contacts, 
+.tech-skills{
+    margin-bottom: 50px;
+}
+
+.contact-p{
+    margin: 0px;
+}
+
+.contact-type{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+.contact-link{
+    opacity: var(--opacity);
+    color: var(--main-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contact-link:hover {
+    color: var(--opposite-text-color);
+    opacity: 1;
+    text-decoration-line: underline;
+}
+
+.tech-skills-list,
+.soft-skills-list{
+    padding: 0px;
+    margin-left: 20px;
+}
+
+.tech-skills-item,
+.skills-item{
+    color: var(--opposite-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;    
+}
+
+.tech-skills-text,
+.soft-skills-txt{
+    color: var(--main-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

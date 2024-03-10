@@ -1,0 +1,286 @@
+/* DARK THEME */
+:root {
+    --main-color: #FFF;
+    --second-color: #1E2939;
+    --main-text-color: #96969a;
+    --main-text-hover: #FFF;
+    --second-text-color: #595959;
+    --third-text-color: #A8A8A8;
+    --opposite-text-color: #FB6D3A;
+    --opacity: 0.5;
+
+    --bg-color-one: #101014;
+    --bg-color-two: #959595;
+    --borders: #707074;
+}
+
+
+/* GENERAL */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6{
+    font-family: "Inter", "Helvetica","Arial",sans-serif;
+    overflow-x: hidden;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+/* HEADER SECTION */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    line-height: 48px;
+    background: var(--bg-color-one);
+    color: var(--main-text-color);
+    padding: 20px 24px;
+    gap: 40px;
+}
+
+.search{
+    flex-grow: 1; /* Займає весь доступний простір */
+}
+
+.menu-list{
+    line-height: 48px;
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+.menu-item:hover{
+    color: var(--main-text-hover);
+}
+
+.logo{
+    margin: 0 20px 0px 70px;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.logo-link{
+    align-items: center;
+}
+
+.logo-link img {
+    vertical-align: middle;
+}
+
+.search-input{
+    padding: 10px;
+
+    background: var(--bg-color-one);
+    border: 2px solid var(--borders);
+    border-radius: 20px;
+    box-shadow: none;
+    box-sizing: border-box!important;
+    color: #e6e6ea;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 40px;
+    letter-spacing: .02em;
+    line-height: 150%;
+    position: relative;
+    transition: border .15s linear;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+/* Humburger Menu START*/
+.hamburger-menu {
+    display: none; /* Початково ховаємо hamburger-меню */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-text-color);
+    margin: 3px 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+/* Humburger Menu END*/
+
+
+
+
+
+
+
+/* MAIN SECTION */
+.content {
+    background-color: var(--bg-color-one);
+
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 90vh;
+    max-height: calc(min-content + 60px);
+}
+
+.wall {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.artwork-grid{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,350px));
+    grid-gap: 5px;
+}
+
+.art_img{
+    width: 350px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.art_img:hover {
+    transform: scale(1.05);
+}
+
+.space{
+    visibility:hidden
+}
+
+  /* ------------- */
+ /* Footer styles */
+/* ------------- */
+/* .fixed-bottom{
+    bottom: 0;
+    font-weight: 700;
+    padding: 10px;
+    height: 80px;
+    line-height: 40px;
+    display: flex;
+    justify-content: right;
+    color: var(--main-text-color);
+    background-color: var(--bg-color-one);
+    border-top: 4px solid var(--contrast-bg-color);
+} */
+
+.footer{
+    padding: 0px 60px;
+}
+
+
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .header{
+        padding: 20px 24px;
+        gap: 20px;
+    }
+    .menu-item{
+        margin: 0px 10px;
+    }
+    .logo{
+        margin: 0 10px;
+    }
+
+
+
+
+
+    .content{
+        padding: 0px;
+    }
+
+    .artwork-grid{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 270px));
+        grid-gap: 5px;
+    }
+
+    .artwork{
+        margin: 5px 0px;
+    }
+
+    .art_img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: flex; /* Показуємо hamburger-меню на малих екранах */
+    }
+
+    .header{
+        padding: 20px 24px;
+        gap: 20px;
+    }
+    .logo{
+        margin: 0 10px;
+    }
+
+    .tabs {
+        display: none; /* Ховаємо основне меню на малих екранах */
+    }
+
+
+
+
+
+    .content{
+        padding: 0px;
+    }
+
+    .artwork-grid{
+        margin: auto;
+        display: block;
+    }
+
+    .artwork{
+        margin: 5px 0px;
+    }
+
+    .art_img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
